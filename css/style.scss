@@ -145,7 +145,7 @@ header {
     .application-img {
 
         img {
-            width: 20rem;
+            width: 25rem;
             margin: 3rem 0;
         }
     }
@@ -170,7 +170,7 @@ header {
 
 .howtos {
     background: var(--lightblue);
-    height: 100vh;
+    height: 121vh;
 
     .howtos-title {
 
@@ -187,8 +187,140 @@ header {
         text-align: center;
 
         img {
-            width: 35rem;
+            width: 25rem;
+            height: 30rem;
             margin: 0 1rem;
+        }
+    }
+
+    .howtos-desc {
+        margin: 3rem 15rem;
+        text-align: center;
+
+        h5 {
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+
+        h1 {
+            font-weight: 800;
+            color: var(--darkblue);
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 15rem;
+        }
+    }
+}
+
+.applications {
+    text-align: center;
+    margin: 3rem 5rem;
+
+    .apps-ui {
+
+        img {
+            width: 25rem;
+        }
+    }
+}
+
+.contact {
+    background: var(--lightblue);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+
+    .contact-details {
+        width: 35%;
+        padding: 1rem 1rem;
+        margin: 0 3rem;
+        border-radius: 20px;
+        box-shadow: var(--darkblue) 0px 8px 24px;
+
+        .contact-forms {
+
+            img {
+                width: 20rem;
+            }
+    
+            h5 {
+                font-size: 2.5rem;
+                color: var(--darkblue);
+                font-weight: 800;
+            }
+    
+            h2 {
+                font-weight: 800;
+                color: var(--darkblue);
+                text-transform: uppercase;
+            }
+    
+            p {
+                color: var(--darkblue);
+                font-size: 1rem;
+                font-weight: 500;
+            }
+    
+            input {
+                padding: .5rem 5rem;
+                margin: .5rem 0;
+            }
+
+            button {
+                padding: .5rem 5rem;
+                background: var(--darkblue);
+                transition: 0.2s;
+            }
+    
+            button:hover {
+                background: var(--black);
+            }
+
+            #textarea {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .contact-subs {
+        width: 35%;
+        background: var(--lightblue);
+        text-align: center;
+        padding: 1rem 1rem;
+        border-radius: 20px;
+        box-shadow: var(--darkblue) 0px 8px 24px;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--darkblue);
+        }
+
+        i {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin: 1rem 1rem;
+            padding: 1rem 1rem;
+            border-radius: 50px;
+            background: var(--darkblue);
+        }
+
+        i:hover {
+            color: var(--white);
+            background: var(--black);
+        }
+
+        button {
+            padding: .5rem 5rem;
+            background: var(--darkblue);
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: var(--black);
         }
     }
 }
