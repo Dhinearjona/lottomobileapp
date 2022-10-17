@@ -151,22 +151,23 @@ header {
 }
 
 .application {
-    text-align: center;
 
     .application-img {
+        padding: 3rem 1rem;
+        text-align: center;
 
         img {
-            width: 25rem;
-            margin: 3rem 0;
+            width: 25%;
         }
     }
 
     .application-desc {
-        margin: 3rem 15rem;
-        
+        text-align: center;
+
         h5 {
-            font-size: 1.5rem;
             text-align: justify;
+            padding: 0 3rem;
+            font-size: 1.5rem;
         }
 
         b {
@@ -174,23 +175,64 @@ header {
         }
 
         img {
+            margin: 2rem 0;
             width: 15rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .application {
+
+        .application-img {
+
+            img {
+                width: 32%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .application {
+
+        .application-img {
+
+            img {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .application-desc {
+
+            h5 {
+                padding: 0 1rem;
+            }
+
+            img {
+                margin: 0;
+            }
         }
     }
 }
 
 .howtos {
     background: var(--lightblue);
-    height: 121vh;
+    padding: 2rem 0;
+    margin-top: 3rem;
 
     .howtos-title {
+        margin-bottom: 3rem;
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            text-transform: uppercase;
             color: var(--darkblue);
+            font-weight: 800;
+            font-size: 50px;
+            margin: 2rem 0;
             text-align: center;
-            padding: 1rem 1rem;
         }
     }
 
@@ -198,26 +240,33 @@ header {
         text-align: center;
 
         img {
-            border-radius: 20px;
             width: 25rem;
             height: 30rem;
             margin: 0 1rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
         }
     }
 
     .howtos-desc {
-        margin: 3rem 15rem;
         text-align: center;
 
         h5 {
-            font-size: 1.5rem;
             text-align: justify;
+            padding: 0 3rem;
+            font-size: 1.5rem;
+        }
+        b {
+            color: var(--darkblue);
         }
 
         h1 {
-            font-weight: 800;
-            color: var(--darkblue);
+            text-align: center;
+            font-weight: 900;
+            font-size: 2.5rem;
             text-transform: uppercase;
+            margin: 2rem 0;
+            color: var(--darkblue);
         }
 
         img {
@@ -226,11 +275,68 @@ header {
     }
 }
 
+@media (max-width: 768px) and (min-width: 501px) {
+    .howtos {
+        padding: .5rem 0;
+
+        .howtos-title {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .howtos-desc {
+
+            h5 {
+                padding: 0 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .howtos {
+
+        .howtos-title {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .howtos-img {
+
+            img {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                padding: 1rem 1rem;
+                border-radius: 30px;
+            }
+        }
+
+        .howtos-desc {
+
+            h5 {
+                padding: 1rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
 .applications {
-    text-align: center;
-    margin: 3rem 5rem;
 
     .apps-ui {
+        text-align: center;
 
         img {
             width: 25rem;
@@ -238,47 +344,140 @@ header {
     }
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+    .applications {
+
+        .apps-ui {
+
+            img {
+                width: 20rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+    .applications {
+
+        .apps-ui {
+
+            img {
+                width: 15rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .applications {
+
+        .apps-ui {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 .contact {
-    background: var(--lightblue);
+    background-color: var(--lightblue);
     text-align: center;
-    padding: 0 30rem;
-    height: 100vh;
+    padding: 3rem 1rem;
 
     .contact-details {
-        color: var(--darkblue);
+        text-align: center;
 
         img {
-            width: 20rem;
+            width: 25rem;
         }
 
         h3 {
             font-size: 2.5rem;
             font-weight: 700;
+            text-transform: uppercase;
+            color: var(--darkblue);
         }
 
         h1 {
             font-size: 2.5rem;
-            text-transform: uppercase;
             font-weight: 900;
+            text-transform: uppercase;
+            color: var(--darkblue);
         }
     }
 
-    form {
+    .contact-info {
+        display: flex;
+        margin: 1rem 1rem;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
-        .form-floating {
-            margin-top: 1rem;
-        }
-
-        button {
-            margin-top: 1rem;
-            background: var(--darkblue);
-            padding: 1rem 3rem;
+        i {
             border-radius: 10px;
-            transition: 0.5s;
+            margin: 2rem 1rem;
+            color: var(--white);
+            background-color: var(--darkblue);
+            padding: 1rem 1rem;
         }
 
-        button:hover {
-            background: var(--black);
+        p {
+            margin: 0;
+        }
+    }
+
+    .contact-maps {
+
+        iframe {
+            width: 100%;
+            height: 30rem;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+    .contact {
+
+        .contact-details {
+
+            img {
+                width: 50%;
+            }
+
+            h3 {
+                margin: 2rem 0;
+            }
+        }
+
+        .contact-info {
+            display: block;
+            padding: 2rem 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact {
+
+        .contact-details {
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                margin: 1rem 0;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .contact-info {
+            display: block;
         }
     }
 }
@@ -287,52 +486,61 @@ header {
     text-align: center;
 
     .subscriber-details {
-        padding: 3rem 15rem;
+        margin: 3rem 10rem;
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 900;
+            font-size: 2rem;
+            font-weight: 700;
             color: var(--darkblue);
         }
     }
 
-    form {
+    button {
+        background-color: var(--darkblue);
+        padding: 1rem 1rem;
+        transition: 0.5s ease-in-out;
+    }
 
-        button {
-            margin-top: 1rem;
-            background: var(--darkblue);
-            padding: 1rem 3rem;
-            border-radius: 10px;
-            transition: 0.5s;
+    button:hover {
+        background-color: var(--black);
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .subscriber {
+        
+        .subscriber-details {
+            margin: 3rem 3rem;
         }
+    }
+}
 
-        button:hover {
-            background: var(--black);
+@media (max-width: 768px) {
+    .subscriber {
+        
+        .subscriber-details {
+            margin: 3rem 1rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
         }
     }
 }
 
 .footer {
-    display: flex;
-    margin: 0 1rem;
-    padding: 0 2rem;
-    justify-content: space-around;
-    margin: 3rem 5rem;
-    color: var(--darkblue);
-    line-height: 2.5rem;
+    margin: 1rem 1rem;
 
     h2 {
+        font-size: 1.5rem;
         font-weight: 700;
-        font-size: 1rem;
-    }
-
-    hr {
-        width: 75px;
+        text-transform: uppercase;
         color: var(--darkblue);
     }
 
-    img {
-        width: 10rem;
+    hr {
+        width: 5rem;
+        color: var(--darkblue);
     }
 
     a {
@@ -341,114 +549,124 @@ header {
         font-weight: 600;
     }
 
-    a:hover {
-        color: var(--black);
+    img {
+        width: 15rem;
+    }
+
+    .footer-details {
+        text-align: center;
+
+        img {
+            width: 10rem;
+        }
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 1rem;
+
+        .quicklinks {
+            line-height: 3rem;
+            font-size: 1rem;
+
+            a {
+                color: var(--darkblue);
+                transition: 0.5s;
+            }
+
+            a:hover {
+                color: var(--black);
+            }
+        }
+
+        .contacts {
+            font-size: 1rem;
+
+            i {
+                background-color: var(--darkblue);
+                padding: 1rem 1rem;
+                color: var(--white);
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s ease-in-out;
+            }
+
+            i:hover {
+                background-color: var(--black);
+            }
+
+            p {
+                margin: 1rem 0;
+            }
+        }
     }
 
     .footer-details {
 
         img {
-            width: 20rem;
+            width: 20%;
         }
     }
+}
 
-    .contacts {
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
 
-        p {
-            font-weight: 500;
-            color: var(--darkblue);
+        h2 {
+            margin: 0;
+            font-size: 1rem;
         }
 
-        i {
-            background: var(--darkblue);
-            padding: .5rem .5rem;
-            font-size: 16px;
-            color: var(--white);
-            border-radius: 5px;
-            cursor: pointer;
+        hr {
+            width: 100%;
+        }
+
+        .footer-details {
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .footer-flex {
+            display: block;
+
+            .contacts {
+                
+                p {
+                    margin: 1rem 0;
+                    font-size: .9rem;
+                }
+            }
         }
     }
 }
 
 .foot {
-    background: var(--black);
-    padding: 1rem 3rem;
+    background-color: var(--black);
     text-align: center;
+    padding: 1rem 0;
     color: var(--white);
-
-    b {
-        color: var(--lightblue);
-    }
 
     img {
         width: 2rem;
         margin-left: 1rem;
     }
-}
 
-@media (max-width: 1024px) and (min-width: 769px) {
-    .application {
-        margin: 3rem 0;
-
-        .application-img {
-
-            img {
-                margin: 3rem -5rem;
-            }
-        }
-
-        .application-desc {
-            margin: 0 3rem;
-        }
+    a {
+        color: var(--white);
+        text-decoration: none;
     }
 
-    .howtos {
-        height: 250vh;
-        padding: 2rem 0;
-
-        .howtos-img {
-            
-            img {
-                margin: 1rem 1rem;
-            }
-        }
-
-        .howtos-desc {
-
-            h5 {
-                font-size: 1.5rem;
-                text-align: justify;
-                margin: 0 -12rem;
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-    .applications {
-
-        .apps-ui {
-
-            img {
-                width: 17rem;
-            }
-        }
+    p {
+        margin: 0;
     }
 }
 
-.contact {
-    height: 120vh;
-    padding: 1rem 7rem;
-}
-
-.subscriber {
-
-    .subscriber-details {
-        padding: 3rem 3rem;
+@media (max-width: 768px) {
+    .foot {
+        padding: 1rem 1rem;
     }
-}
-
-.footer {
-    display: grid;
-    margin: 3rem 3rem;
-    grid-template-columns: 1fr;
 }
