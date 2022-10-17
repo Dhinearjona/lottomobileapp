@@ -209,10 +209,13 @@ header {
 
             h5 {
                 padding: 0 1rem;
+                font-size: 1rem;
+                margin-bottom: 1rem;
             }
 
             img {
                 margin: 0;
+                width: 10rem;
             }
         }
     }
@@ -301,11 +304,13 @@ header {
 
 @media (max-width: 500px) {
     .howtos {
+        padding: .5rem 0;
 
         .howtos-title {
 
             h1 {
                 font-size: 1.5rem;
+                margin: 1rem 0;
             }
         }
 
@@ -324,10 +329,11 @@ header {
 
             h5 {
                 padding: 1rem 1rem;
+                font-size: 1rem;
             }
 
             h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -482,52 +488,6 @@ header {
     }
 }
 
-.subscriber {
-    text-align: center;
-
-    .subscriber-details {
-        margin: 3rem 10rem;
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--darkblue);
-        }
-    }
-
-    button {
-        background-color: var(--darkblue);
-        padding: 1rem 1rem;
-        transition: 0.5s ease-in-out;
-    }
-
-    button:hover {
-        background-color: var(--black);
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    .subscriber {
-        
-        .subscriber-details {
-            margin: 3rem 3rem;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .subscriber {
-        
-        .subscriber-details {
-            margin: 3rem 1rem;
-
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
-    }
-}
-
 .footer {
     margin: 1rem 1rem;
 
@@ -632,6 +592,7 @@ header {
 
         .footer-flex {
             display: block;
+            padding: 0;
 
             .contacts {
                 

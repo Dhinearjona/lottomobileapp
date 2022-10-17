@@ -159,9 +159,12 @@ header .nav-bar .active {
   }
   .application .application-desc h5 {
     padding: 0 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
   .application .application-desc img {
     margin: 0;
+    width: 10rem;
   }
 }
 .howtos {
@@ -228,8 +231,12 @@ header .nav-bar .active {
   }
 }
 @media (max-width: 500px) {
+  .howtos {
+    padding: 0.5rem 0;
+  }
   .howtos .howtos-title h1 {
     font-size: 1.5rem;
+    margin: 1rem 0;
   }
   .howtos .howtos-img img {
     width: 100%;
@@ -240,9 +247,10 @@ header .nav-bar .active {
   }
   .howtos .howtos-desc h5 {
     padding: 1rem 1rem;
+    font-size: 1rem;
   }
   .howtos .howtos-desc h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .applications .apps-ui {
@@ -339,39 +347,6 @@ header .nav-bar .active {
     display: block;
   }
 }
-.subscriber {
-  text-align: center;
-}
-.subscriber .subscriber-details {
-  margin: 3rem 10rem;
-}
-.subscriber .subscriber-details h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--darkblue);
-}
-.subscriber button {
-  background-color: var(--darkblue);
-  padding: 1rem 1rem;
-  transition: 0.5s ease-in-out;
-}
-.subscriber button:hover {
-  background-color: var(--black);
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .subscriber .subscriber-details {
-    margin: 3rem 3rem;
-  }
-}
-@media (max-width: 768px) {
-  .subscriber .subscriber-details {
-    margin: 3rem 1rem;
-  }
-  .subscriber .subscriber-details h1 {
-    font-size: 1.5rem;
-  }
-}
 .footer {
   margin: 1rem 1rem;
 }
@@ -452,6 +427,7 @@ header .nav-bar .active {
   }
   .footer .footer-flex {
     display: block;
+    padding: 0;
   }
   .footer .footer-flex .contacts p {
     margin: 1rem 0;
