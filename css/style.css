@@ -36,6 +36,9 @@ header .hamburger {
 header .nav-bar {
   align-items: center;
 }
+header .nav-bar img {
+  display: none;
+}
 header .nav-bar ul {
   display: flex;
   margin: 0;
@@ -81,15 +84,21 @@ header .nav-bar .active {
     margin: 6px 0;
   }
   header .nav-bar {
-    height: 0;
+    width: 0;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
     background: var(--lightblue);
     transition: 0.2s;
     overflow: hidden;
+  }
+  header .nav-bar img {
+    display: block;
+    width: 8rem;
+    margin: 1rem 4rem;
+    text-align: center;
   }
   header .nav-bar ul {
     display: block;
@@ -101,7 +110,7 @@ header .nav-bar .active {
     opacity: 1;
   }
   header .active {
-    height: 100vh;
+    width: 250px;
   }
 }
 
@@ -150,6 +159,7 @@ header .nav-bar .active {
   text-align: center;
 }
 .howtos .howtos-img img {
+  border-radius: 20px;
   width: 25rem;
   height: 30rem;
   margin: 0 1rem;
@@ -182,80 +192,156 @@ header .nav-bar .active {
 .contact {
   background: var(--lightblue);
   text-align: center;
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0;
+  padding: 0 30rem;
+  height: 100vh;
 }
 .contact .contact-details {
-  width: 35%;
-  padding: 1rem 1rem;
-  margin: 0 3rem;
-  border-radius: 20px;
-  box-shadow: var(--darkblue) 0px 8px 24px;
+  color: var(--darkblue);
 }
-.contact .contact-details .contact-forms img {
+.contact .contact-details img {
   width: 20rem;
 }
-.contact .contact-details .contact-forms h5 {
+.contact .contact-details h3 {
   font-size: 2.5rem;
-  color: var(--darkblue);
-  font-weight: 800;
+  font-weight: 700;
 }
-.contact .contact-details .contact-forms h2 {
-  font-weight: 800;
-  color: var(--darkblue);
+.contact .contact-details h1 {
+  font-size: 2.5rem;
   text-transform: uppercase;
+  font-weight: 900;
 }
-.contact .contact-details .contact-forms p {
-  color: var(--darkblue);
-  font-size: 1rem;
-  font-weight: 500;
+.contact form .form-floating {
+  margin-top: 1rem;
 }
-.contact .contact-details .contact-forms input {
-  padding: 0.5rem 5rem;
-  margin: 0.5rem 0;
-}
-.contact .contact-details .contact-forms button {
-  padding: 0.5rem 5rem;
+.contact form button {
+  margin-top: 1rem;
   background: var(--darkblue);
-  transition: 0.2s;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  transition: 0.5s;
 }
-.contact .contact-details .contact-forms button:hover {
+.contact form button:hover {
   background: var(--black);
 }
-.contact .contact-details .contact-forms #textarea {
-  margin-bottom: 1rem;
-}
-.contact .contact-subs {
-  width: 35%;
-  background: var(--lightblue);
+
+.subscriber {
   text-align: center;
-  padding: 1rem 1rem;
-  border-radius: 20px;
-  box-shadow: var(--darkblue) 0px 8px 24px;
 }
-.contact .contact-subs h1 {
+.subscriber .subscriber-details {
+  padding: 3rem 15rem;
+}
+.subscriber .subscriber-details h1 {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--darkblue);
 }
-.contact .contact-subs i {
-  color: var(--white);
-  font-size: 1.5rem;
-  margin: 1rem 1rem;
-  padding: 1rem 1rem;
-  border-radius: 50px;
+.subscriber form button {
+  margin-top: 1rem;
   background: var(--darkblue);
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  transition: 0.5s;
 }
-.contact .contact-subs i:hover {
-  color: var(--white);
+.subscriber form button:hover {
   background: var(--black);
 }
-.contact .contact-subs button {
-  padding: 0.5rem 5rem;
-  background: var(--darkblue);
-  transition: 0.2s;
+
+.footer {
+  display: flex;
+  margin: 0 1rem;
+  padding: 0 2rem;
+  justify-content: space-around;
+  margin: 3rem 5rem;
+  color: var(--darkblue);
+  line-height: 2.5rem;
 }
-.contact .contact-subs button:hover {
+.footer h2 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.footer hr {
+  width: 75px;
+  color: var(--darkblue);
+}
+.footer img {
+  width: 10rem;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--darkblue);
+  font-weight: 600;
+}
+.footer a:hover {
+  color: var(--black);
+}
+.footer .footer-details img {
+  width: 20rem;
+}
+.footer .contacts p {
+  font-weight: 500;
+  color: var(--darkblue);
+}
+.footer .contacts i {
+  background: var(--darkblue);
+  padding: 0.5rem 0.5rem;
+  font-size: 16px;
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.foot {
   background: var(--black);
+  padding: 1rem 3rem;
+  text-align: center;
+  color: var(--white);
+}
+.foot b {
+  color: var(--lightblue);
+}
+.foot img {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .application {
+    margin: 3rem 0;
+  }
+  .application .application-img img {
+    margin: 3rem -5rem;
+  }
+  .application .application-desc {
+    margin: 0 3rem;
+  }
+  .howtos {
+    height: 250vh;
+    padding: 2rem 0;
+  }
+  .howtos .howtos-img img {
+    margin: 1rem 1rem;
+  }
+  .howtos .howtos-desc h5 {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 0 -12rem;
+    margin-bottom: 1rem;
+  }
+  .applications .apps-ui img {
+    width: 17rem;
+  }
+}
+.contact {
+  height: 120vh;
+  padding: 1rem 7rem;
+}
+
+.subscriber .subscriber-details {
+  padding: 3rem 3rem;
+}
+
+.footer {
+  display: grid;
+  margin: 3rem 3rem;
+  grid-template-columns: 1fr;
 }

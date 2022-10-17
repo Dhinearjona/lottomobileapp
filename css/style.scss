@@ -39,6 +39,10 @@ header {
     .nav-bar {
         align-items: center;
 
+        img {
+            display: none;
+        }
+
         ul {
             display: flex;
             margin: 0;
@@ -96,15 +100,22 @@ header {
         }
 
         .nav-bar {
-            height: 0;
+            width: 0;
+            height: 100vh;
             position: absolute;
-            top: 80px;
+            top: 0;
             left: 0;
             right: 0;
-            width: 100vw;
             background: var(--lightblue);
             transition: 0.2s;
             overflow: hidden;
+
+            img {
+                display: block;
+                width: 8rem;
+                margin: 1rem 4rem;
+                text-align: center;
+            }
 
             ul {
                 display: block;
@@ -118,7 +129,7 @@ header {
         }
 
         .active {
-            height: 100vh;
+            width: 250px;
         }
     }
 }
@@ -187,6 +198,7 @@ header {
         text-align: center;
 
         img {
+            border-radius: 20px;
             width: 25rem;
             height: 30rem;
             margin: 0 1rem;
@@ -229,98 +241,214 @@ header {
 .contact {
     background: var(--lightblue);
     text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 3rem 0;
+    padding: 0 30rem;
+    height: 100vh;
 
     .contact-details {
-        width: 35%;
-        padding: 1rem 1rem;
-        margin: 0 3rem;
-        border-radius: 20px;
-        box-shadow: var(--darkblue) 0px 8px 24px;
+        color: var(--darkblue);
 
-        .contact-forms {
-
-            img {
-                width: 20rem;
-            }
-    
-            h5 {
-                font-size: 2.5rem;
-                color: var(--darkblue);
-                font-weight: 800;
-            }
-    
-            h2 {
-                font-weight: 800;
-                color: var(--darkblue);
-                text-transform: uppercase;
-            }
-    
-            p {
-                color: var(--darkblue);
-                font-size: 1rem;
-                font-weight: 500;
-            }
-    
-            input {
-                padding: .5rem 5rem;
-                margin: .5rem 0;
-            }
-
-            button {
-                padding: .5rem 5rem;
-                background: var(--darkblue);
-                transition: 0.2s;
-            }
-    
-            button:hover {
-                background: var(--black);
-            }
-
-            #textarea {
-                margin-bottom: 1rem;
-            }
+        img {
+            width: 20rem;
         }
-    }
 
-    .contact-subs {
-        width: 35%;
-        background: var(--lightblue);
-        text-align: center;
-        padding: 1rem 1rem;
-        border-radius: 20px;
-        box-shadow: var(--darkblue) 0px 8px 24px;
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
 
         h1 {
             font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--darkblue);
+            text-transform: uppercase;
+            font-weight: 900;
         }
+    }
 
-        i {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin: 1rem 1rem;
-            padding: 1rem 1rem;
-            border-radius: 50px;
-            background: var(--darkblue);
-        }
+    form {
 
-        i:hover {
-            color: var(--white);
-            background: var(--black);
+        .form-floating {
+            margin-top: 1rem;
         }
 
         button {
-            padding: .5rem 5rem;
+            margin-top: 1rem;
             background: var(--darkblue);
-            transition: 0.2s;
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            transition: 0.5s;
         }
 
         button:hover {
             background: var(--black);
         }
     }
+}
+
+.subscriber {
+    text-align: center;
+
+    .subscriber-details {
+        padding: 3rem 15rem;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--darkblue);
+        }
+    }
+
+    form {
+
+        button {
+            margin-top: 1rem;
+            background: var(--darkblue);
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background: var(--black);
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    margin: 0 1rem;
+    padding: 0 2rem;
+    justify-content: space-around;
+    margin: 3rem 5rem;
+    color: var(--darkblue);
+    line-height: 2.5rem;
+
+    h2 {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    hr {
+        width: 75px;
+        color: var(--darkblue);
+    }
+
+    img {
+        width: 10rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--darkblue);
+        font-weight: 600;
+    }
+
+    a:hover {
+        color: var(--black);
+    }
+
+    .footer-details {
+
+        img {
+            width: 20rem;
+        }
+    }
+
+    .contacts {
+
+        p {
+            font-weight: 500;
+            color: var(--darkblue);
+        }
+
+        i {
+            background: var(--darkblue);
+            padding: .5rem .5rem;
+            font-size: 16px;
+            color: var(--white);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+.foot {
+    background: var(--black);
+    padding: 1rem 3rem;
+    text-align: center;
+    color: var(--white);
+
+    b {
+        color: var(--lightblue);
+    }
+
+    img {
+        width: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .application {
+        margin: 3rem 0;
+
+        .application-img {
+
+            img {
+                margin: 3rem -5rem;
+            }
+        }
+
+        .application-desc {
+            margin: 0 3rem;
+        }
+    }
+
+    .howtos {
+        height: 250vh;
+        padding: 2rem 0;
+
+        .howtos-img {
+            
+            img {
+                margin: 1rem 1rem;
+            }
+        }
+
+        .howtos-desc {
+
+            h5 {
+                font-size: 1.5rem;
+                text-align: justify;
+                margin: 0 -12rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .applications {
+
+        .apps-ui {
+
+            img {
+                width: 17rem;
+            }
+        }
+    }
+}
+
+.contact {
+    height: 120vh;
+    padding: 1rem 7rem;
+}
+
+.subscriber {
+
+    .subscriber-details {
+        padding: 3rem 3rem;
+    }
+}
+
+.footer {
+    display: grid;
+    margin: 3rem 3rem;
+    grid-template-columns: 1fr;
 }
