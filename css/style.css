@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --black: #000;
   --white: #FFF;
@@ -19,6 +23,7 @@
 
 body {
   background: var(--white);
+  overflow-x: hidden;
 }
 
 header {
@@ -114,6 +119,7 @@ header .nav-bar .active {
   }
   header .active {
     width: 250px;
+    z-index: 1000;
   }
 }
 
@@ -124,6 +130,14 @@ header .nav-bar .active {
 }
 .cover .cover-img img {
   width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+}
+.cover .cover-img .box:nth-of-type(even) {
+  transform: translateX(0);
+}
+.cover .cover-img .show {
+  transform: translateX(0);
 }
 
 .application {
