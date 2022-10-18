@@ -12,6 +12,9 @@
   --white: #FFF;
   --darkblue: #133A67;
   --lightblue: #B4D6FC;
+  --h1: calc(1.375rem + 1.5vw);
+  --h3: calc(1.3rem + .6vw);
+  --footer-title: 20px;
 }
 
 body {
@@ -123,6 +126,9 @@ header .nav-bar .active {
   width: 100%;
 }
 
+.application {
+  padding: 0 5%;
+}
 .application .application-img {
   padding: 3rem 1rem;
   text-align: center;
@@ -133,17 +139,15 @@ header .nav-bar .active {
 .application .application-desc {
   text-align: center;
 }
-.application .application-desc h5 {
+.application .application-desc p {
   text-align: justify;
-  padding: 0 3rem;
-  font-size: 1.5rem;
 }
 .application .application-desc b {
   color: var(--darkblue);
 }
 .application .application-desc img {
-  margin: 2rem 0;
-  width: 15rem;
+  height: 50px;
+  margin: 0 0.5rem;
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -157,30 +161,20 @@ header .nav-bar .active {
     display: block;
     width: 100%;
   }
-  .application .application-desc h5 {
-    padding: 0 1rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
   .application .application-desc img {
-    margin: 0;
-    width: 10rem;
+    height: 35px;
   }
 }
 .howtos {
   background: var(--lightblue);
-  padding: 2rem 0;
+  padding: 2rem 5%;
   margin-top: 3rem;
-}
-.howtos .howtos-title {
-  margin-bottom: 3rem;
 }
 .howtos .howtos-title h1 {
   text-transform: uppercase;
   color: var(--darkblue);
   font-weight: 800;
-  font-size: 50px;
-  margin: 2rem 0;
+  font-size: var(--h1);
   text-align: center;
 }
 .howtos .howtos-img {
@@ -196,48 +190,35 @@ header .nav-bar .active {
 .howtos .howtos-desc {
   text-align: center;
 }
-.howtos .howtos-desc h5 {
-  text-align: justify;
-  padding: 0 3rem;
-  font-size: 1.5rem;
-}
 .howtos .howtos-desc b {
   color: var(--darkblue);
 }
 .howtos .howtos-desc h1 {
   text-align: center;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: var(--h1);
   text-transform: uppercase;
   margin: 2rem 0;
   color: var(--darkblue);
 }
 .howtos .howtos-desc img {
-  width: 15rem;
+  height: 50px;
+  margin: 0 0.5rem;
+}
+.howtos .howtos-desc p {
+  text-align: justify;
+  margin-top: 1rem;
 }
 
 @media (max-width: 768px) and (min-width: 501px) {
   .howtos {
-    padding: 0.5rem 0;
+    padding: 2rem 5%;
   }
-  .howtos .howtos-title h1 {
-    font-size: 1.5rem;
-  }
-  .howtos .howtos-desc h5 {
-    padding: 0 1rem;
-  }
-  .howtos .howtos-desc h1 {
-    font-size: 2rem;
+  .howtos .howtos-desc img {
+    height: 35px;
   }
 }
 @media (max-width: 500px) {
-  .howtos {
-    padding: 0.5rem 0;
-  }
-  .howtos .howtos-title h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
   .howtos .howtos-img img {
     width: 100%;
     height: auto;
@@ -245,12 +226,8 @@ header .nav-bar .active {
     padding: 1rem 1rem;
     border-radius: 30px;
   }
-  .howtos .howtos-desc h5 {
-    padding: 1rem 1rem;
-    font-size: 1rem;
-  }
-  .howtos .howtos-desc h1 {
-    font-size: 1.5rem;
+  .howtos .howtos-desc img {
+    height: 35px;
   }
 }
 .applications .apps-ui {
@@ -287,13 +264,14 @@ header .nav-bar .active {
   width: 25rem;
 }
 .contact .contact-details h3 {
-  font-size: 2.5rem;
+  font-size: var(--h3);
+  margin: 1rem 0;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--darkblue);
 }
 .contact .contact-details h1 {
-  font-size: 2.5rem;
+  font-size: var(--h1);
   font-weight: 900;
   text-transform: uppercase;
   color: var(--darkblue);
@@ -324,9 +302,6 @@ header .nav-bar .active {
   .contact .contact-details img {
     width: 50%;
   }
-  .contact .contact-details h3 {
-    margin: 2rem 0;
-  }
   .contact .contact-info {
     display: block;
     padding: 2rem 0;
@@ -336,22 +311,15 @@ header .nav-bar .active {
   .contact .contact-details img {
     width: 100%;
   }
-  .contact .contact-details h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-  .contact .contact-details h1 {
-    font-size: 1.5rem;
-  }
   .contact .contact-info {
     display: block;
   }
 }
 .footer {
-  margin: 1rem 1rem;
+  padding: 2rem 5%;
 }
-.footer h2 {
-  font-size: 1.5rem;
+.footer h3 {
+  font-size: var(--footer-title);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--darkblue);
@@ -366,18 +334,11 @@ header .nav-bar .active {
   font-weight: 600;
 }
 .footer img {
-  width: 15rem;
-}
-.footer .footer-details {
-  text-align: center;
-}
-.footer .footer-details img {
-  width: 10rem;
+  margin: 2rem 0;
 }
 .footer .footer-flex {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 1rem;
 }
 .footer .footer-flex .quicklinks {
   line-height: 3rem;
@@ -386,12 +347,10 @@ header .nav-bar .active {
 .footer .footer-flex .quicklinks a {
   color: var(--darkblue);
   transition: 0.5s;
+  font-size: var(--h2);
 }
 .footer .footer-flex .quicklinks a:hover {
   color: var(--black);
-}
-.footer .footer-flex .contacts {
-  font-size: 1rem;
 }
 .footer .footer-flex .contacts i {
   background-color: var(--darkblue);
@@ -407,6 +366,10 @@ header .nav-bar .active {
 .footer .footer-flex .contacts p {
   margin: 1rem 0;
 }
+.footer .footer-flex .download img {
+  height: 50px;
+  margin: 1rem 0;
+}
 .footer .footer-details img {
   width: 20%;
 }
@@ -415,12 +378,12 @@ header .nav-bar .active {
   .footer {
     text-align: center;
   }
-  .footer h2 {
-    margin: 0;
-    font-size: 1rem;
+  .footer h3 {
+    margin: 1.5rem 0;
   }
   .footer hr {
     width: 100%;
+    margin: 0.5rem 0;
   }
   .footer .footer-details img {
     width: 50%;
@@ -431,7 +394,6 @@ header .nav-bar .active {
   }
   .footer .footer-flex .contacts p {
     margin: 1rem 0;
-    font-size: 0.9rem;
   }
 }
 .foot {

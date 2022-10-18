@@ -13,6 +13,9 @@
     --darkblue: #133A67;
     --lightblue: #B4D6FC;
 
+    --h1: calc(1.375rem + 1.5vw);
+    --h3: calc(1.3rem + .6vw);
+    --footer-title: 20px;
 }
 
 body {
@@ -151,6 +154,7 @@ header {
 }
 
 .application {
+    padding: 0 5%;
 
     .application-img {
         padding: 3rem 1rem;
@@ -164,10 +168,8 @@ header {
     .application-desc {
         text-align: center;
 
-        h5 {
+        p {
             text-align: justify;
-            padding: 0 3rem;
-            font-size: 1.5rem;
         }
 
         b {
@@ -175,8 +177,8 @@ header {
         }
 
         img {
-            margin: 2rem 0;
-            width: 15rem;
+            height: 50px;
+            margin: 0 .5rem;
         }
     }
 }
@@ -207,15 +209,8 @@ header {
 
         .application-desc {
 
-            h5 {
-                padding: 0 1rem;
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-
             img {
-                margin: 0;
-                width: 10rem;
+                height: 35px;
             }
         }
     }
@@ -223,18 +218,16 @@ header {
 
 .howtos {
     background: var(--lightblue);
-    padding: 2rem 0;
+    padding: 2rem 5%;
     margin-top: 3rem;
 
     .howtos-title {
-        margin-bottom: 3rem;
 
         h1 {
             text-transform: uppercase;
             color: var(--darkblue);
             font-weight: 800;
-            font-size: 50px;
-            margin: 2rem 0;
+            font-size: var(--h1);
             text-align: center;
         }
     }
@@ -254,11 +247,6 @@ header {
     .howtos-desc {
         text-align: center;
 
-        h5 {
-            text-align: justify;
-            padding: 0 3rem;
-            font-size: 1.5rem;
-        }
         b {
             color: var(--darkblue);
         }
@@ -266,37 +254,32 @@ header {
         h1 {
             text-align: center;
             font-weight: 900;
-            font-size: 2.5rem;
+            font-size: var(--h1);
             text-transform: uppercase;
             margin: 2rem 0;
             color: var(--darkblue);
         }
 
         img {
-            width: 15rem;
+            height: 50px;
+            margin: 0 0.5rem;
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 1rem;
         }
     }
 }
 
 @media (max-width: 768px) and (min-width: 501px) {
     .howtos {
-        padding: .5rem 0;
-
-        .howtos-title {
-
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
+        padding: 2rem 5%;
 
         .howtos-desc {
 
-            h5 {
-                padding: 0 1rem;
-            }
-
-            h1 {
-                font-size: 2rem;
+            img {
+                height: 35px;
             }
         }
     }
@@ -304,15 +287,6 @@ header {
 
 @media (max-width: 500px) {
     .howtos {
-        padding: .5rem 0;
-
-        .howtos-title {
-
-            h1 {
-                font-size: 1.5rem;
-                margin: 1rem 0;
-            }
-        }
 
         .howtos-img {
 
@@ -327,13 +301,8 @@ header {
 
         .howtos-desc {
 
-            h5 {
-                padding: 1rem 1rem;
-                font-size: 1rem;
-            }
-
-            h1 {
-                font-size: 1.5rem;
+            img {
+                height: 35px;
             }
         }
     }
@@ -399,14 +368,15 @@ header {
         }
 
         h3 {
-            font-size: 2.5rem;
+            font-size: var(--h3);
+            margin: 1rem 0;
             font-weight: 700;
             text-transform: uppercase;
             color: var(--darkblue);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: var(--h1);
             font-weight: 900;
             text-transform: uppercase;
             color: var(--darkblue);
@@ -450,10 +420,6 @@ header {
             img {
                 width: 50%;
             }
-
-            h3 {
-                margin: 2rem 0;
-            }
         }
 
         .contact-info {
@@ -471,15 +437,6 @@ header {
             img {
                 width: 100%;
             }
-
-            h3 {
-                font-size: 1.5rem;
-                margin: 1rem 0;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
         }
 
         .contact-info {
@@ -489,10 +446,10 @@ header {
 }
 
 .footer {
-    margin: 1rem 1rem;
+    padding: 2rem 5%;
 
-    h2 {
-        font-size: 1.5rem;
+    h3 {
+        font-size: var(--footer-title);
         font-weight: 700;
         text-transform: uppercase;
         color: var(--darkblue);
@@ -510,21 +467,12 @@ header {
     }
 
     img {
-        width: 15rem;
-    }
-
-    .footer-details {
-        text-align: center;
-
-        img {
-            width: 10rem;
-        }
+        margin: 2rem 0;
     }
 
     .footer-flex {
         display: flex;
         justify-content: space-around;
-        padding: 1rem 1rem;
 
         .quicklinks {
             line-height: 3rem;
@@ -533,6 +481,7 @@ header {
             a {
                 color: var(--darkblue);
                 transition: 0.5s;
+                font-size: var(--h2);
             }
 
             a:hover {
@@ -541,7 +490,6 @@ header {
         }
 
         .contacts {
-            font-size: 1rem;
 
             i {
                 background-color: var(--darkblue);
@@ -560,6 +508,14 @@ header {
                 margin: 1rem 0;
             }
         }
+
+        .download {
+
+            img {
+                height: 50px;
+                margin: 1rem 0;
+            }
+        }
     }
 
     .footer-details {
@@ -574,13 +530,13 @@ header {
     .footer {
         text-align: center;
 
-        h2 {
-            margin: 0;
-            font-size: 1rem;
+        h3 {
+            margin: 1.5rem 0;
         }
 
         hr {
             width: 100%;
+            margin: .5rem 0;
         }
 
         .footer-details {
@@ -598,7 +554,6 @@ header {
                 
                 p {
                     margin: 1rem 0;
-                    font-size: .9rem;
                 }
             }
         }
