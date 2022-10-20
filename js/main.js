@@ -1,11 +1,9 @@
-const hamburger = document.querySelector('.hamburger');
-const hamburger_icon = hamburger.querySelector('span');
-const mobile_menu = document.querySelector('.mobile-menu');
+const burger = document.querySelector('.burger');
 
-hamburger.addEventListener('click', () => {
-	hamburger_icon.innerText = hamburger_icon.innerText === 'menu' 
-		? 'close'
-		: 'menu';
-	
-	mobile_menu.classList.toggle('is-open');
-})
+burger.addEventListener("click", () => {
+	if (burger.classList.contains("fa-bars")) {
+		burger.classList.replace("fa-bars", "fa-times");
+	} else {
+		burger.classList.replace("fa-times", "fa-bars");
+	}
+});
