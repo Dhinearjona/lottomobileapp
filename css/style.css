@@ -121,7 +121,10 @@ nav img {
   text-align: center;
 }
 .application .application-img img {
-  width: 25%;
+  width: 15rem;
+  margin: 0 3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 .application .application-desc {
   text-align: center;
@@ -137,16 +140,9 @@ nav img {
   margin: 0 0.5rem;
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-  .application .application-img img {
-    width: 32%;
-  }
-}
 @media (max-width: 768px) {
   .application .application-img img {
-    text-align: center;
-    display: block;
-    width: 100%;
+    margin: 0;
   }
   .application .application-desc img {
     height: 35px;
@@ -170,7 +166,7 @@ nav img {
 .howtos .howtos-img img {
   width: 25rem;
   height: 30rem;
-  margin: 0 1rem;
+  margin: 2rem 1rem;
   border-radius: 10px;
   margin-bottom: 3rem;
 }
@@ -217,26 +213,28 @@ nav img {
     height: 35px;
   }
 }
+.applications {
+  padding: 0 5%;
+  margin: 3rem 0;
+}
 .applications .apps-ui {
   text-align: center;
 }
 .applications .apps-ui img {
-  width: 25rem;
+  width: 15rem;
+  margin: 0 5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
   .applications .apps-ui img {
-    width: 20rem;
+    margin: 0 2rem;
   }
 }
-@media (max-width: 768px) and (min-width: 501px) {
+@media (max-width: 768px) {
   .applications .apps-ui img {
-    width: 15rem;
-  }
-}
-@media (max-width: 500px) {
-  .applications .apps-ui img {
-    width: 100%;
+    margin: 0;
   }
 }
 .contact {

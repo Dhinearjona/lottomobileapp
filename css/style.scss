@@ -137,7 +137,10 @@ nav {
         text-align: center;
 
         img {
-            width: 25%;
+            width: 15rem;
+            margin: 0 3rem;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -159,27 +162,13 @@ nav {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-    .application {
-
-        .application-img {
-
-            img {
-                width: 32%;
-            }
-        }
-    }
-}
-
 @media (max-width: 768px) {
     .application {
 
         .application-img {
 
             img {
-                text-align: center;
-                display: block;
-                width: 100%;
+                margin: 0;
             }
         }
 
@@ -214,7 +203,7 @@ nav {
         img {
             width: 25rem;
             height: 30rem;
-            margin: 0 1rem;
+            margin: 2rem 1rem;
             border-radius: 10px;
             margin-bottom: 3rem;
         }
@@ -285,12 +274,17 @@ nav {
 }
 
 .applications {
+    padding: 0 5%;
+    margin: 3rem 0;
 
     .apps-ui {
         text-align: center;
 
         img {
-            width: 25rem;
+            width: 15rem;
+            margin: 0 5rem;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
@@ -301,31 +295,19 @@ nav {
         .apps-ui {
 
             img {
-                width: 20rem;
+                margin: 0 2rem;
             }
         }
     }
 }
 
-@media (max-width: 768px) and (min-width: 501px) {
+@media (max-width: 768px) {
     .applications {
 
         .apps-ui {
 
             img {
-                width: 15rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .applications {
-
-        .apps-ui {
-
-            img {
-                width: 100%;
+                margin: 0;
             }
         }
     }
