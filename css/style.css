@@ -22,96 +22,71 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
+#header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-
-ul {
-  margin: 0;
-  padding: 0;
+#header .container {
+  padding: 10px 5%;
 }
-
-header {
-  height: 100px;
+#header nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-header img {
-  width: 4rem;
+#header nav ul {
+  margin: 0;
 }
-
-.nav-toggler,
-.nav-toggler-label {
-  display: none;
-}
-
-.navbar {
-  display: flex;
+#header nav li {
+  display: inline-block;
   list-style: none;
-  padding: 0 3rem;
+  margin: 10px 20px;
+  text-align: center;
 }
-.navbar .nav-item {
-  margin: 0 0.5rem;
-}
-.navbar .nav-link {
-  padding: 0.5rem 0.25rem;
-  color: var(--black);
-  font-weight: 700;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link:active {
+#header nav .active {
   color: var(--darkblue);
 }
+#header nav a {
+  color: var(--black);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+}
+#header nav a:hover {
+  color: var(--darkblue);
+}
+#header nav .fas {
+  display: none;
+}
+#header .logo {
+  width: 3rem;
+}
 
-@media (max-width: 768px) {
-  header {
-    position: relative;
-  }
-  header img {
-    justify-content: center;
-  }
-  .nav-toggler-label {
-    display: block;
-    position: absolute;
+@media (max-width: 600px) {
+  #header nav ul {
+    background: var(--lightblue);
+    position: fixed;
     top: 0;
-    right: 2rem;
-    display: flex;
-    font-size: 1.5rem;
-    align-items: center;
-    height: 100%;
-  }
-  .navbar {
-    display: block;
+    right: -500px;
     width: 100%;
-    text-align: center;
     height: 100vh;
+    padding: 50px;
+    z-index: 2;
+    transition: right 0.5s;
   }
-  .navbar .nav-item {
-    margin: 0;
-  }
-  .navbar .nav-link {
+  #header nav li {
     display: block;
-    width: 100%;
+    margin: 25px;
   }
-  .navbar .nav-link:hover,
-.navbar .nav-link:active {
-    background-color: var(--darkblue);
-    color: var(--white);
+  #header nav .fas {
+    display: block;
+    font-size: 25px;
   }
-  nav {
+  #header nav .fa-times {
     position: absolute;
-    top: 100%;
-    width: 100%;
-    background-color: var(--lightblue);
-    line-height: 40px;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: 0.3s;
-  }
-  .nav-toggler:checked ~ nav {
-    transform: scale(1, 1);
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
   }
 }
 .cover .cover-img img {
