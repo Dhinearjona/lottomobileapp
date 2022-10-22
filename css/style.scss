@@ -124,14 +124,18 @@ body {
     padding: 0 5%;
 
     .application-img {
-        padding: 3rem 1rem;
         text-align: center;
 
         img {
-            width: 15rem;
-            margin: 0 3rem;
+            width: 12rem;
+            margin: 0 1rem;
             justify-content: space-between;
             align-items: center;
+            transition: transform .3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -140,6 +144,7 @@ body {
 
         p {
             text-align: justify;
+            margin: 1rem 0;
         }
 
         b {
@@ -159,7 +164,7 @@ body {
         .application-img {
 
             img {
-                margin: 0;
+                margin: 0 1rem;
             }
         }
 
@@ -167,6 +172,19 @@ body {
 
             img {
                 height: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .application {
+
+        .application-img {
+
+            img {
+                width: 100%;
+                margin: 0;
             }
         }
     }
@@ -244,6 +262,13 @@ body {
 @media (max-width: 500px) {
     .howtos {
 
+        .howtos-title {
+
+            h1 {
+                font-size: 1.25rem;
+            }
+        }
+
         .howtos-img {
 
             img {
@@ -260,45 +285,46 @@ body {
             img {
                 height: 35px;
             }
-        }
-    }
-}
 
-.applications {
-    padding: 0 5%;
-    margin: 3rem 0;
-
-    .apps-ui {
-        text-align: center;
-
-        img {
-            width: 15rem;
-            margin: 0 5rem;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-    .applications {
-
-        .apps-ui {
-
-            img {
-                margin: 0 2rem;
+            h1 {
+                font-size: 1.25rem;
             }
         }
     }
 }
 
-@media (max-width: 768px) {
-    .applications {
+.applications {
+    width: 100%;
+    padding: 0 5%;
+    margin: 2rem 0;
+    justify-content: center;
+    align-items: center;
 
-        .apps-ui {
+    .gallery {
+
+        img {
+            width: 115px;
+            margin: 0 1rem;
+            transition: transform .5s;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .applications {
+        padding: 0;
+        text-align: center;
+
+        .gallery {
+
 
             img {
-                margin: 0;
+                width: 200px;
             }
         }
     }
@@ -341,7 +367,7 @@ body {
 
         i {
             border-radius: 10px;
-            margin: 2rem 1rem;
+            margin: 1rem 1rem;
             color: var(--white);
             background-color: var(--darkblue);
             padding: 1rem 1rem;
@@ -373,7 +399,6 @@ body {
 
         .contact-info {
             display: block;
-            padding: 2rem 0;
         }
     }
 }
@@ -386,10 +411,26 @@ body {
             img {
                 width: 100%;
             }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 800;
+            }
+
+            h1 {
+                margin: 1rem 0;
+                font-size: 2.25rem;
+            }
         }
 
         .contact-info {
             display: block;
+
+            i {
+                margin: 1rem 0;
+                padding: 1.5rem 1.5rem;
+                border-radius: 50px;
+            }
         }
     }
 }
@@ -498,6 +539,13 @@ body {
         .footer-flex {
             display: block;
             padding: 0;
+
+            .download {
+
+                img {
+                    height: 2.5rem;
+                }
+            }
 
             .contacts {
                 
