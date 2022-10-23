@@ -12,21 +12,20 @@
     <title>Lotto Mobile App</title>
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="img/logo.png" class="logo" />
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#application">Why Us</a></li>
-                    <li><a href="#howtos">How It Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
+    <nav class="navbar">
+        <div>
+            <a href="#"><img class="primary-icon" src="img/logo.png" /></a>
         </div>
-    </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#">Why Us</a></li>
+            <li class="list-item"><a href="#">How It Works</a></li>
+            <li class="list-item"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
 
     <div class="cover" id="cover">
         <div class="cover-img">
