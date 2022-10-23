@@ -32,6 +32,7 @@ body {
 .navbar .nav-list {
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 .navbar .primary-icon {
   height: 4rem;
@@ -84,7 +85,7 @@ body {
     top: 25px;
   }
 }
-.cover .cover-img img {
+.cover video {
   width: 100%;
 }
 

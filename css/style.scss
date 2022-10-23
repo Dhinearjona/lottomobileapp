@@ -33,6 +33,7 @@ body {
     .nav-list {
         list-style-type: none;
         margin: 0;
+        padding: 0;
     }
 
     .primary-icon {
@@ -98,11 +99,8 @@ body {
 
 .cover {
 
-    .cover-img {
-
-        img {
-            width: 100%;
-        }
+    video {
+        width: 100%;
     }
 }
 
